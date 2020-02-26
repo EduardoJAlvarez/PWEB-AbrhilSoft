@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;  
+}
+
+.bienvenido{
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  font-size:30px;
+}
+
+.bienvenido img{
+  width: 700px;
+}
+.imagenf{
+  background: black ;
+}
+/*Scroll*/
+body::-webkit-scrollbar{
+  width: 6.5px;
+  
+}
+body::-webkit-scrollbar-thumb{
+  background: rgb(20, 129, 129);
+  border-radius: 10px;
+}
+/*logo*/
+.logotec img{
+  position: absolute;
+  width: 170px;
+  top: 1%;
+  left: 82%;
+}
+
+/*Sidebar*/
+#sidebar {
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(0deg, rgb(20, 134, 136) 0%, rgba(23,18,83,1) 100%);
+    left: -250px;
+    transition: 0.5s;
+    z-index: 1;
+    top: 0;   
+}
+
+#sidebar.active {
+    left: 0px;
+    transition: 0.5s;
+}
+
+.item:hover{
+    background: rgba(220, 225, 225, 0.3);
+    border-left:5px solid #eeee;
+}
+
+#toggle-btn{
+    position: relative;
+    left: 230px;
+    top:30px;   
+}
+
+.contenedorbtn{
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: scale(0.7);
+    padding: 2px;
+    width: 5px;
+}
+.menu{
+    text-decoration:none;
+}
+
+.menu img{
+    width: 200px;
+    border-radius: 12px;
+    margin: 5px 15px;
+    background-color: blue;
+}
+
+.menu li {
+position: relative;
+}
+
+.menu li a{
+    text-decoration:none;
+    list-style: none;
+    display: block;
+    position: relative;
+    color:rgb(230, 227, 227);
+    padding: 15px 7PX;
+    outline: .5px solid rgba(220, 225, 225, 0.1);
+    font-weight: 250px;
+    font-size: 16px;
+    transition: .3s ease color;
+    text-align: left;
+}
+
+.menu li:hover > a{
+    color: white;
+    background: rgb(255,255,255,0.2);
+    border-left: 4px solid #eee;
+    transition: 0.4s;
+    text-decoration:none;
+}
+
+.menu li ul{
+    background: linear-gradient(0deg, rgb(20, 134, 136) 0%, rgba(23,18,83,1) 100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+    z-index: 999;
+    left: 245px;
+    top: 0;
+    list-style: none;
+    position: absolute;
+    height: auto;
+    min-width: 245px;
+    padding: 0;
+}
+
+.menu li:hover > ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    left: 250px;   
+}
+
+#btnadd{
+    position: absolute;
+    width: 170px;
+    top:14%;
+    left: 40%;
+}
+.txtb{
+    position: absolute;
+    top:15%;
+    left:62%;
+    width: 230px;
+}
+
+.subb{
+    position: absolute;
+    top:15%;
+    left:80%;
+    width: 80px;
+    color: white;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(23,18,83,1) 100%);
+}
+
+.i{
+  font-size: 20px;
+}
+  
+
+
+
+
